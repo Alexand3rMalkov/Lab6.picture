@@ -20,12 +20,10 @@ void main()
 		}
 		printf("\n");
 	}
-
 }
 int figure(int x, int y)
 {
 
     if ((x <= 0 && y >= 0) && (x - y <= 3) && ((pow(x, 2) + pow(y, 2)) <= 36)) return 1;
-    //if ((x >= 0 && y >= 0) && (-x + 3 <= y) && ((pow(x, 2) + pow(y, 2)) <= 36))  return 1;
 	else return 0;
 }
