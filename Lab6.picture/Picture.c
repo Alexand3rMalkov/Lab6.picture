@@ -15,8 +15,8 @@ void main()
     {
         for (y = -(Y / 2); y <= Y / 2; ++y)
         {
-			if (figure(x, y)) printf("x ");
-			else printf("* ");
+			if (figure(x, y)) printf("* ");
+			else printf(" ");
 		}
 		printf("\n");
 	}
