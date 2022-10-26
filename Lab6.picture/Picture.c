@@ -14,11 +14,11 @@ void main()
 	scanf("%d", &Y);
 	printf("Требуемая фигура:");
 	printf("\n");
-    for (x = -(X / 2); x <= X / 2; ++x)
-    {
-        for (y = -(Y / 2); y <= Y / 2; ++y)
-        {
-			if (fig(x, y)) printf("* ");
+	for (x = -(X / 2); x <= X / 2; ++x)
+	{
+		for (y = -(Y / 2); y <= Y / 2; ++y)
+		{
+			if (fig(x, y)) printf("+ ");
 			else printf(" ");
 		}
 		printf("\n");
@@ -28,6 +28,6 @@ void main()
 int fig(int x, int y)
 {
 
-    if ((x <= 0 && y >= 0) && (x - y <= 3) && ((pow(x, 2) + pow(y, 2)) <= 36)) return 1;
+	if ((x <= 0 && y >= 0) && (x - y <= 3) && ((pow(x, 2) + pow(y, 2)) <= 36) - ((x <= 0 && y >= 0) && (x - y >= -3) && ((pow(x, 2) - pow(y, 2)) <= 36))) return 1;
 	else return 0;
 }
